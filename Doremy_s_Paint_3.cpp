@@ -20,7 +20,7 @@ void solve()
         return;
     }
 
-    if ((mpp.begin()->second - mpp.rend()->second) <= 1)
+    if (abs(mpp.begin()->second - mpp.rbegin()->second) <= 1)
     {
         cout << "YES" << endl;
     }
