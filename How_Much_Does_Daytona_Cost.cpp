@@ -13,10 +13,7 @@ void solve(){
 
     for(int i = 0 ; i < n ; i++){
         cin >> v[i];
-        if(v[i] == k){
-            cout << "YES\n" ;
-            return;
-        }
+        mp[v[i]]++;
     }
 
     if(mp[k] >= 1){
