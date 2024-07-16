@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "utility": "cpp",
+        "cstdlib": "cpp",
+        "vector": "cpp",
+        "string": "cpp",
+        "format": "cpp"
+    },
+    "C_Cpp.errorSquiggles": "enabledIfIncludesResolve",
+    "C_Cpp.default.compilerPath": "C:/msys64/ucrt64/bin/g++.exe"
+}
