@@ -7,7 +7,7 @@ using namespace std;
 #define pb push_back
 
 /*Note that the answer is always not greater than 5. When n=1, m=25, the answer is either 5 or −1, it is easy to see that the answer cannot be greater.
-This allows us to simply iterate over the number of operations, each time checking if soccurs in x. The time complexity of this solution is O(25⋅n⋅m).*/
+This allows us to simply iterate over the number of operations, each time checking if s occurs in x. The time complexity of this solution is O(25⋅n⋅m).*/
 
 void solve(){
     int n , m;
