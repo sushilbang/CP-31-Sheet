@@ -19,30 +19,24 @@ void print(vi &v){
     cout << endl;
 }
 void solve(){
-    int n; cin >> n;
-    vector<int> a(n);
-    int z = 0,mx = 1,cnt = 1;
-    FOR(i,n){ 
+    int n;
+    cin >> n;
+    int a[n];
+    int cnt = 0, ans = 0;
+    for(int i = 0; i < n; i++)
+    {
         cin >> a[i];
-        if(a[i] == 0) z++;
-    }
-    if(z == 0){
-        cout << "0" << endl;
-        return;
-    }
-    if(z == 1){
-        cout << "1" << endl;
-        return;
-    }
-    for(int i = 0 ; i < n - 1 ; i++){
-        if(a[i] == 0 && a[i+1] == 0){
+        if(a[i] == 0)
+        {
             cnt++;
-            mx = max(mx,cnt);
-        }else{
-            cnt = 1;
+        }
+        else
+        {
+            ans = max(ans, cnt);
+            cnt = 0;
         }
     }
-    cout << mx << endl;
+    cout << max(ans, cnt) << endl;
 }
 
 int main(){
